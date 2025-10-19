@@ -1,0 +1,11 @@
+import random 
+num_dice = int(input("How many dice do you want to roll? "))
+
+total = 0  # start with total = 0
+
+for i in range(num_dice):
+    roll = random.randint(1, 6)  
+    print("Die", i + 1, "shows:", roll)
+    total = total + roll  
+
+print("The total of all dice is:", total)
