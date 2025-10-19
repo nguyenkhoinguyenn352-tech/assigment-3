@@ -1,0 +1,13 @@
+numbers = []  # create an empty list
+
+while True:
+    n = input("Enter a number (press Enter to stop): ")
+    if n == "":
+        break
+    numbers.append(int(n))  # add the number to the list
+
+numbers.sort(reverse=True)  # sort numbers from largest to smallest
+
+print("The five greatest numbers are:")
+for x in numbers[:5]:  # print only the top 5 numbers
+    print(x)
